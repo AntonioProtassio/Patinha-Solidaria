@@ -5,12 +5,12 @@
 }
 
 body {
-  background-color: #6F3D05;
+  background-color: #fdf8e6;
   overflow-x: hidden;
 }
 
 header {
-    background-color: #EBB000;
+  background-color: #ebb000;
   position: fixed;
   top: -5px;
   width: 100%;
@@ -23,11 +23,7 @@ header {
   z-index: 2;
 }
 
-
-
-
 .content-section {
-  margin: auto;
   width: 100%;
   height: auto;
   padding: 0 !important;
@@ -36,27 +32,27 @@ header {
 
 .imagem-desk {
   margin-top: 113px;
-  width: 400%;
+  width: 6090px;
   height: auto;
   display: flex;
 }
 
-.Brand-logo{
-    margin-left: 50%;
-    width: 300px;
-    cursor: pointer;
+.Brand-logo {
+  margin-left: 50%;
+  width: 300px;
+  cursor: pointer;
 }
 
-.navegaçaocentral{
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    font-size: 18px;
-    font-family: "Rubik", sans-serif;
-    a{
-        text-decoration: none;
-        color: black;
-    }
+.navegaçaocentral {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .imagem-desk input {
@@ -78,12 +74,12 @@ header {
 .manual {
   position: absolute;
   width: 100%;
-  margin-top: 30%;
+  margin-top: 35%;
   display: flex;
   justify-content: center;
 }
 
-.navegaçaoauto{
+.navegaçaoauto {
   position: absolute;
   width: 100%;
   margin-top: 30%;
@@ -91,42 +87,96 @@ header {
   justify-content: center;
 }
 
-.manual .btn-1, .navegaçaoauto div {
-  border: 1px solid #EBB000;
+.manual .btn-1,
+.navegaçaoauto div {
+  border: 1px solid #ebb000;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.5s;
 
-  &:hover{
-    background-color: #EBB000;
+  &:hover {
+    background-color: #ebb000;
   }
 }
 
-.manual .btn-1:not(:last-child), .navegaçaoauto div:not(:last-child) {
-    margin-right: 10px;
+.manual .btn-1:not(:last-child),
+.navegaçaoauto div:not(:last-child) {
+  margin-right: 10px;
 }
 
-#radio1:checked ~ .navegaçaoauto .btn-1{
-  background-color: #EBB000;
+#radio1:checked ~ .navegaçaoauto .btn-1 {
+  background-color: #ebb000;
 }
 
-#radio2:checked ~ .navegaçaoauto .btn-1{
-  background-color: #EBB000;
+#radio2:checked ~ .navegaçaoauto .btn-1 {
+  background-color: #ebb000;
 }
 
-#radio3:checked ~ .navegaçaoauto .btn-1{
-  background-color: #EBB000;
+#radio3:checked ~ .navegaçaoauto .btn-1 {
+  background-color: #ebb000;
 }
 
-#radio1:checked ~ .primeiro{
+#radio1:checked ~ .primeiro {
   margin-left: 0%;
 }
 
-#radio2:checked ~ .primeiro{
+#radio2:checked ~ .primeiro {
   margin-left: -25%;
 }
 
-#radio3:checked ~ .primeiro{
+#radio3:checked ~ .primeiro {
   margin-left: -50%;
+}
+
+.conheça {
+  margin-top: 5%;
+}
+
+
+.adoção {
+  background-color: antiquewhite;
+}
+
+.apadrinhe {
+  background-color: aqua;
+  
+}
+
+.doação {
+  background-color: bisque;
+}
+
+.pai {
+  margin-top: 100px;
+  display: flex; /* Usa o Flexbox */
+  justify-content: space-between;
+  align-items: center; /* Centraliza os filhos na direção vertical (eixo Y) */
+ width: 100%;
+ height: 100px; /* A altura do contêiner é 100% da altura da tela */
+}
+
+.adoção,
+.apadrinhe,
+.doação {
+  display: flex;
+  width: 60%;
+  height: 300%;
+  justify-content: center;
+  align-items: center;
+  background-color: #4CAF50; /* Cor de fundo para visualização */
+  color: white;
+  border-radius: 10px; /* Bordas arredondadas */
+  margin: 60px;
+}
+
+.adoção img {
+  width: 50px;
+  max-width: 100%; /* Garante que a imagem ocupe o tamanho máximo do contêiner sem ultrapassar */
+  max-height: 100%; /* Garante que a imagem se ajuste ao tamanho máximo do contêiner sem distorção */
+  object-fit: cover; /* Faz a imagem se ajustar sem cortar ou distorcer */
+}
+
+span {
+  font-size: 12px; /* Ajuste do tamanho da fonte */
 }

@@ -1,5 +1,6 @@
-var radio = document.querySelector("btn-1");
-varcont = 1;
+const radio = document.querySelector(".btn-1");
+let cont = 1
+
 document.getElementById("radio1").Checked = true;
 
 setInterval(() => {
@@ -7,10 +8,8 @@ setInterval(() => {
 }, 5000);
 
 function proximaimg() {
-  cont++
+ 
+  cont = cont > 3 ? 1 : cont + 1;
 
-  if(cont > 3){
-    cont = 1
-  }
-  document.getElementById('radio'+cont).Checked = true;
-}
+  document.getElementById('radio' + cont).checked = true;
+};
